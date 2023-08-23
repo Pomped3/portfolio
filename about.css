@@ -1,0 +1,27 @@
+.about-content {
+  /* Make sure the content area has sufficient height to enable scrolling */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content .div-text {
+  flex: 1; /* Allow the content to take up available vertical space */
+  overflow: hidden; /* Enable scrolling for the content */
+  overflow-y: scroll;
+  max-height: 400px;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.about-content .div-about-content p {
+  text-align: justify;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+    
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .div-about-content {
+    width: 80%;
+  }
+}
